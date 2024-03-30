@@ -25,15 +25,14 @@
 
   // plugins/profile-effect-remover/styles.css
   var styles_default = `
-.avatarDecoration_cf681a {
-    display: none;
+[class^="avatarDecoration"] {
+  display: none;
 }
-.avatarDecoration__8a0c2 {
-    display: none;
+
+[class^="profileEffects"] {
+  display: none;
 }
-.profileEffects__9b664 {
-    display: none;
-}`;
+`;
 
   // plugins/profile-effect-remover/index.tsx
   var uninjectCss = shelter.ui.injectCss(styles_default);
