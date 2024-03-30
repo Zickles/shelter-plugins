@@ -1,10 +1,6 @@
 find dist -type f -name "README.md" -exec rm {} +
-echo "---
-title: Zickles Shelter Plugins
-description: My website for my shelter plugins
-image: https://cdn.discordapp.com/avatars/468043261911498767/dcbe7d1eace06401a2fe9c3f1c4c31ce.png?size=4096
----" >> dist/README.md
 echo "# Zickles shelter plugins" >> dist/README.md
+echo "shelter.stay-mad.lol" >> dist/CNAME
 for plugin in $(cd plugins/; ls); do
   echo "## $(jq -r .name < "plugins/$plugin/plugin.json")">>dist/README.md
   echo "" >> dist/README.md
