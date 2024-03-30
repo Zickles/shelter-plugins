@@ -1,0 +1,1 @@
+gets rid of all profile effects including the ones around someones profiles and the ones when you open someones profile
